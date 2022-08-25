@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/categorias.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="#">Empanadas</a>
+        <a href="#">Pastelitos</a>
+        <a href="#">Bebidas</a>
+        <a href="#">Hacé tu pedido</a>
+    </div>
+
+    <div class="banner">
+        <img class="background-img" src="./images/background.png" alt="banner">
+        <h1 class="title">LA CHACHA</h1>
+        <p class="sub-title">Empanadas</p>
+    </div>
+    <div class="container">
+      <!--Incluir imágenes con promos-->
+        <div class="carousel fade">
+          <img src="./images/promos.png" style="width:100%">
+        </div>
+        <div class="carousel fade">
+          <img src="./images/promo02.jpg" style="width:100%">
+        </div>
+        <div class="carousel fade">
+          <img src="./images/promo03.jpeg" style="width:100%">
+        </div>
+        <a class="prev" onclick="changeImages(-1)">&#10094;</a>
+        <a class="next" onclick="changeImages(1)">&#10095;</a>
+      </div>
+<script src="./js/carousel.js"></script>
+      <section class="categorias">
+        <div class="titulo">
+          <h3>Empanadas</h3>
+          <h4>$180</h4>
+        </div>
+        <article class="listado">
+          <ul>
+            <li>aa</li>
+            <li>aa</li>
+          </ul>
+        </article>
+      </section>
+      <section class="categorias">
+        <div class="titulo">
+          <h3>Pastelitos</h3>
+          <h4>$150</h4>
+        </div>
+        <article class="listado">
+          <ul>
+            <li>Membrillo</li>
+            <li>Batata</li>
+            <li>Dulce de Leche</li>
+          </ul>
+        </article>
+      </section>
+      <section class="categorias">
+        <div class="titulo">
+          <h3>Bebidas</h3>
+        </div>
+        <article class="listado">
+          <ul>
+            <li>Coca-cola 500cc. .................. $100</li>
+            <li>Sprite 500cc. .................. $100</li>
+          </ul>
+        </article>
+      </section>
+
+      <footer>
+        <ul>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-github"></i></a></li>
+         </ul>
+         
+      </footer>
+</body>

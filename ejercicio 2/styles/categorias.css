@@ -1,0 +1,19 @@
+.categorias{
+    width: 100%;
+    background-color: #fef0c1;
+
+}
+
+.categorias .titulo{
+    background-color: #832e29;
+    width: 100%;
+    color: white;
+    display: flex;
+    /*padding-left: 5%;*/
+    justify-content: space-between;
+}
+
+.categorias .listado ul {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}

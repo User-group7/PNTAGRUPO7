@@ -1,0 +1,31 @@
+.banner {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.banner .background-img{
+    width: 100%;
+    margin-top: -40vh;
+    z-index: 0;
+}
+.banner .title, .banner .sub-title {
+    position: absolute;
+    font-weight: bold;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.banner .title{ 
+    top: 17vw;
+    left: 45vw;
+    font-size: 5em;
+}
+
+.banner .sub-title {
+    top: 25vw;
+    left: 46vw;
+}

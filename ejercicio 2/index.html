@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/categorias.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="#empanadas">Empanadas</a>
+        <a href="#pastelitos">Pastelitos</a>
+        <a href="#bebidas">Bebidas</a>
+        <a href="#">Hacé tu pedido</a>
+    </div>
+
+    <div class="banner">
+        <img class="background-img" src="./images/background.png" alt="banner">
+        <h1 class="title">LA CHACHA</h1>
+        <p class="sub-title">Empanadas</p>
+    </div>
+    <div class="container">
+      <!--Incluir imágenes con promos-->
+        <div class="carousel fade">
+          <img src="./images/promos.png" style="width:100%">
+        </div>
+        <div class="carousel fade">
+          <img src="./images/promo02.jpg" style="width:100%">
+        </div>
+        <div class="carousel fade">
+          <img src="./images/promo03.jpeg" style="width:100%">
+        </div>
+        <a class="prev" onclick="changeImages(-1)">&#10094;</a>
+        <a class="next" onclick="changeImages(1)">&#10095;</a>
+      </div>
+<script src="./js/carousel.js"></script>
+      <section class="categorias" id="empanadas">
+        <div class="titulo">
+          <h3>Empanadas</h3>
+          <h4>$180</h4>
+        </div>
+        <article class="listado">
+          <ul>
+            <li>1- Carne Suave</li>
+            <li>2- Carne Picante</li>
+            <li>3- Carne Cuchillo</li>
+            <li>4- Carne Criolla</li>
+            <li>5- Jamon y Queso</li>
+            <li>6- Jamon, Queso y Tomate</li>
+            <li>7- Pollo</li>
+            <li>8- Humita</li>
+            <li>9- Queso y Cebolla</li>
+            <li>10- Ananá, Jamon y Muzzarella</li>
+            <li>11- Roquefort</li>
+            <li>12- Roquefort con Jamon</li>
+            <li>13- Roquefort con Apio</li>
+            <li>14- Verdura</li>
+            <li>15- Muzzarella con Cantimpalo</li>
+            <li>16- Panceta y Ciruela</li>
+            <li>17- Oreganato</li>
+            <li>18- Albahaca</li>
+         </ul>
+        </article>
+      </section>
+      <section class="categorias" id="pastelitos">
+        <div class="titulo">
+          <h3>Pastelitos</h3>
+          <h4>$150</h4>
+        </div>
+        <article class="listado">
+          <ul>
+            <li>Membrillo</li>
+            <li>Batata</li>
+            <li>Dulce de Leche</li>
+          </ul>
+        </article>
+      </section>
+      <section class="categorias" id="bebidas">
+        <div class="titulo">
+          <h3>Bebidas</h3>
+        </div>
+        <article class="listado">
+          <ul>
+            <li>Coca-cola 500cc........................................................................................$100</li>
+            <li>Sprite 500cc...............................................................................................$100</li>
+            <li>Fanta 500cc...............................................................................................$100</li>
+            <li>Stella Artois 473cc. ...................................................................................$300</li>
+            <li>Quilmes 473cc...........................................................................................$300</li>
+            <li>Imperial 473cc...........................................................................................$300</li>
+            <li>Bhrama 473cc...........................................................................................$300</li>
+
+          </ul>
+        </article>
+      </section>
+
+      <footer>
+        <ul>
+          <li><a href="#"><i class="fa fa-youtube" onclick="location.href='https://www.youtube.com'"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook" onclick="location.href='https://www.facebook.com'"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" onclick="location.href='https://www.twitter.com'"></i></a></li>
+          <li><a href="#"><i class="fa fa-github" onclick="location.href='https://www.github.com'"></i></a></li>
+         </ul>
+         
+      </footer>
+</body>

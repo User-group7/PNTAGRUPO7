@@ -1,15 +1,22 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background: #508067;
   }
 
 .menu {
     overflow: hidden;
-    background-color: #913131;
+    background-color: rgba(131, 46, 41, 0.451);
+    backdrop-filter: blur(2px);
     color: white;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 9999;
+    transition: .5s;
+  }
+
+  .menu.menu-opacity {
+    background-color: rgb(131 46 41);
   }
   
   .menu a {
@@ -20,6 +27,7 @@ body {
     text-decoration: none;
     font-size: 17px;
     color: white;
+    transition: .5s;
 
   }
   
@@ -30,30 +38,6 @@ body {
   }
   
   .menu a.active {
-    background-color: #f09144;
-    color: white;
+    background-color: #ffefc1;
+    color: black;
   }
-
-  footer{
-    background-color: gray;
-  }
-
-  footer ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-  }
-
-  footer ul li {
-    padding: 5px 10px;
-    
-  }
-
-  footer a {
-    color: lightgrey;
-    font-size: 25px;
-   }
-
-   footer a:hover {
-    color: white;
-   }

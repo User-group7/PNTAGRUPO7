@@ -1,31 +1,57 @@
 .banner {
     width: 100%;
-    height: 90vh;
+    height: 60vw;
     overflow: hidden;
     position: relative;
     text-align: center;
+ 
 }
 .banner .background-img{
     width: 100%;
-    margin-top: -40vh;
-    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: -40vw;
+    z-index: -1;
+}
+.banner .background-blur {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(4, 59, 36, 0.43);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+.banner .logo-circle {
+    margin: 0 auto;
+    margin-top: 10vw;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background: #ffefc1;
+    border: 10px solid #581e19;
 }
 .banner .title, .banner .sub-title {
-    position: absolute;
     font-weight: bold;
-    z-index: 2;
-    text-align: center;
-    color: white;
+    color: #581e19;
     text-transform: uppercase;
 }
 
 .banner .title{ 
-    top: 17vw;
-    left: 45vw;
+    padding-top: 10vw;
     font-size: 5em;
+    margin-bottom: 0;
+}
+.banner .sub-title {
+    margin-top: 0;
 }
 
-.banner .sub-title {
-    top: 25vw;
-    left: 46vw;
+#wave {
+    margin-top: -100vw;
+    position: relative;
+    z-index: 3;
 }

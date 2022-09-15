@@ -1,31 +1,38 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles/form.css">
-        <h4>Formulario para envio de pedido</h4>
+        <h2>Formulario para envio de pedido</h2>
     </head>
-    <body>
-        <div class="formulario" >
-            <script>
-                window.onload = function(){
-                    function funcionMostrar(){
-                        var cantidadEmpanadas = document.getElementById("cantidadEmpanadas")    
-                        if (document.getElementById("opcionSi").checked){
 
-                            cantidadEmpanadas.show();    
-                        }
-                    }
-                }
-                </script>
+    <body>
+        <div class="formulario">
+          <!--Cómo hacer para que oculte con 'no'?-->
+          <script>
+            function mostrarEmpanadas() {
+              var x = document.getElementById("gustosE");
+              if (x.style.display == "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+          </script>
+        
         <form action="formulario" >
-            <p>Nombre: <input type="text" name="nombre" size="20" required></p>
-            <p>Apellido: <input type="text" name="apellido" size="20"></p>
-            <p>Numero de celular: <input type="tel" name="celular"  placeholder="Ejemplo: 11-56476359" pattern= [0-9]{2}-[0-9]{8} required></p>
-            <p>Direccion: <input type="text" name="direccion" size="30" required></p>
-            <p>Empanadas:
-              <input type="radio" name="opcionEmpanadas" value="Si" id="opcionSi" onclick="funcionMostrar();"> Si
-              <input type="radio" name="opcionEmpanadas" value="No" id="opcionNo"> No
-            </p>
-            <div class="gustos">
+            <p>Nombre*: <input type="text" name="nombre" size="20" required></p>
+
+            <p>Apellido*: <input type="text" name="apellido" size="20" required></p>
+
+            <p>Numero de celular*: <input type="tel" name="celular"  placeholder="Ejemplo: 11-56476359" pattern= [0-9]{2}-[0-9]{8} required></p>
+
+            <p>Direccion*: <input type="text" name="direccion" size="30" required></p>
+
+            <div>Empanadas:
+              <input type="radio" name="opcionEmpanadas" value="Si" id="opcionSi" onclick="mostrarEmpanadas()" > Si
+              <input type="radio" name="opcionEmpanadas" value="No" id="opcionNo" onclick="mostrarEmpanadas()" checked> No
+            </div>
+
+            <div class="gustos" id="gustosE">
             <label>Carne Suave</label>
             <input type="number" min="0" max="36" value="0" ></label>
             <label>Carne Picante</label>
@@ -62,26 +69,48 @@
             <input type="number" min="0" max="36" value="0" ></label>
             <label>Albahaca</label>
             <input type="number" min="0" max="36" value="0" ></label>
+
+            <p>Cantidad de empanadas ingresadas:</p>
+            <!--<script>
+              function contarEmpanadas(){
+                for()
+              }
+            </script>-->
               
-            </div>
-            
+          </div>
+
+          <script>
+            function mostrarPastelitos() {
+              var x = document.getElementById("gustosP");
+              if (x.style.display == "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+          </script> 
+
           <div>
             <p>Pastelitos:
-                    <input type="radio" name="opcionPastelitos" value="Si" id="opcionSi"> Si
-                    <input type="radio" name="opcionPastelitos" value="No" id="opcionNo"> No
+                    <input type="radio" name="opcionPastelitos" value="Si" id="opcionSi" onclick="mostrarPastelitos()"> Si
+                    <input type="radio" name="opcionPastelitos" value="No" id="opcionNo" onclick="mostrarPastelitos()" checked> No
              </p>
-             <div  class="gustos">
-              <label>Membrillo </label>
-              <input type="number" min="0" max="36" value="0" size="20"></label>
-              <label>Batata </label>
-              <input type="number" min="0" max="36" value="0" size="5"></label>
-              <label>Dulce de Leche </label>
-              <input type="number" min="0" max="36" value="0" size="5"></label>
-             </div>
+          </div>
+
+          <div class="gustos" id="gustosP">
+            <label>Membrillo </label>
+            <input type="number" min="0" max="36" value="0" size="20"></label>
+            <label>Batata </label>
+            <input type="number" min="0" max="36" value="0" size="5"></label>
+            <label>Dulce de Leche </label>
+            <input type="number" min="0" max="36" value="0" size="5"></label>
+
+            <p>Cantidad de pastelitos ingresados:</p>
+
           </div>
              
              <p>  
-             Informacion adicional:<br>
+             Informacion adicional (opcional):<br>
             
                 <textarea name="mensaje"></textarea>
             

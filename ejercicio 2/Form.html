@@ -2,19 +2,20 @@
     <head>
         <link rel="stylesheet" href="styles/form.css">
         <h2>Formulario para envio de pedido</h2>
+        <meta charset="UTF-8" />
     </head>
 
     <body>
         <div class="formulario">
-          <!--Cómo hacer para que oculte con 'no'?-->
           <script>
-            function mostrarEmpanadas() {
+            function mostrarGustosE() {
               var x = document.getElementById("gustosE");
-              if (x.style.display == "none") {
-                x.style.display = "block";
-              } else {
+              x.style.display="block";
+            }
+
+            function ocultarGustosE(){
+              var x = document.getElementById("gustosE");
                 x.style.display = "none";
-              }
             }
           </script>
         
@@ -28,8 +29,8 @@
             <p>Direccion*: <input type="text" name="direccion" size="30" required></p>
 
             <div>Empanadas:
-              <input type="radio" name="opcionEmpanadas" value="Si" id="opcionSi" onclick="mostrarEmpanadas()" > Si
-              <input type="radio" name="opcionEmpanadas" value="No" id="opcionNo" onclick="mostrarEmpanadas()" checked> No
+              <input type="radio" name="opcionEmpanadas" value="Si" id="opcionSi" onclick="mostrarGustosE()" > Si
+              <input type="radio" name="opcionEmpanadas" value="No" id="opcionNo" onclick="ocultarGustosE()" checked> No
             </div>
 
             <div class="gustos" id="gustosE">
@@ -80,20 +81,21 @@
           </div>
 
           <script>
-            function mostrarPastelitos() {
+             function mostrarGustosP() {
               var x = document.getElementById("gustosP");
-              if (x.style.display == "none") {
-                x.style.display = "block";
-              } else {
+              x.style.display="block";
+            }
+
+            function ocultarGustosP(){
+              var x = document.getElementById("gustosP");
                 x.style.display = "none";
-              }
             }
           </script> 
 
           <div>
             <p>Pastelitos:
-                    <input type="radio" name="opcionPastelitos" value="Si" id="opcionSi" onclick="mostrarPastelitos()"> Si
-                    <input type="radio" name="opcionPastelitos" value="No" id="opcionNo" onclick="mostrarPastelitos()" checked> No
+                    <input type="radio" name="opcionPastelitos" value="Si" id="opcionSi" onclick="mostrarGustosP()"> Si
+                    <input type="radio" name="opcionPastelitos" value="No" id="opcionNo" onclick="ocultarGustosP()" checked> No
              </p>
           </div>
 
@@ -112,7 +114,7 @@
              <p>  
              Informacion adicional (opcional):<br>
             
-                <textarea name="mensaje"></textarea>
+                <textarea name="mensaje" class="mensaje"></textarea>
             
               </p>
             <p>

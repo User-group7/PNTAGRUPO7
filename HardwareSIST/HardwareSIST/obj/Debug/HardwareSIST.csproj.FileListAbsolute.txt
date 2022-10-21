@@ -1,0 +1,7 @@
+C:\Users\lulan\Downloads\PNT1\ProyectoFinal\HardwareSIST\HardwareSIST\obj\Debug\HardwareSIST.csproj.AssemblyReference.cache
+C:\Users\lulan\Downloads\PNT1\ProyectoFinal\HardwareSIST\HardwareSIST\obj\Debug\HardwareSIST.csproj.CoreCompileInputs.cache
+C:\Users\lulan\Downloads\PNT1\ProyectoFinal\HardwareSIST\HardwareSIST\bin\Debug\HardwareSIST.exe.config
+C:\Users\lulan\Downloads\PNT1\ProyectoFinal\HardwareSIST\HardwareSIST\bin\Debug\HardwareSIST.exe
+C:\Users\lulan\Downloads\PNT1\ProyectoFinal\HardwareSIST\HardwareSIST\bin\Debug\HardwareSIST.pdb
+C:\Users\lulan\Downloads\PNT1\ProyectoFinal\HardwareSIST\HardwareSIST\obj\Debug\HardwareSIST.exe
+C:\Users\lulan\Downloads\PNT1\ProyectoFinal\HardwareSIST\HardwareSIST\obj\Debug\HardwareSIST.pdb

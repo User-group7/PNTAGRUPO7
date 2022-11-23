@@ -1,0 +1,31 @@
+PNT TO DO:
+1)  guardar bien los usuarios (nombre y apellido) y los productos(nombre y modelo)
+-> creamos en el modelo un string con ambos atributos, en el controller lo utilizamos
+DONE
+
+
+2) guardar NULL al crear entrega
+-> agregar null en el create o validar y que no muestre en el controller edit
+
+
+3) validar que la fecha de devolución no sea menor a la fecha entrega (al EDITAR)
+DONE
+
+4) validar que las fechas de entrega sea menor a la fecha de hoy
+DONE
+
+5) editar views usuario
+DONE
+
+6) agregar login: validación solo usuarios de cierto nivel pueden entrar (agregar atributo a usuario)
+
+7) agregar como obligatorios USUARIO y PRODUCTO 
+DONE
+
+8) no permitir modificar USUARIO, PRODUCTO, FECHA ENTREGA al devolver
+??
+
+
+- agregar diagrama en el GIT
+- cambiar nombreproducto de nombre a marca
+- agregar filtro para ubicar nombres de usuarios [[https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/search?view=aspnetcore-7.0]]
